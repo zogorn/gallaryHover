@@ -1,5 +1,5 @@
-# startingKit
-My Front-End Starting Kit, for every from scratch project.
+# Image Gallery Hover Effect
+Awesome gallery hover effect for images and other purposes.
 
 
 ## Version
