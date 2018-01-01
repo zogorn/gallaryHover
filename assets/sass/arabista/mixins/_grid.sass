@@ -1,0 +1,8 @@
+=row()
+	display: flex
+	flex-wrap: wrap
+
+
+=col($ncol: 12, $base: 12)
+	min-width: 100% * ($ncol / $base)
+	flex-basis: 100% * ($ncol / $base)

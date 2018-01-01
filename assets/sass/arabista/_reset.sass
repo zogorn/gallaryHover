@@ -1,0 +1,100 @@
+// general resets for HTML elements to have the same good experince
+// - main variables includeing colors and other stuff
+// - include Normalize: Normalize is licensed MIT. https://github.com/necolas/normalize.css
+// - html box sizing
+// - body: color, font-size, font-family, ...
+// - main margin resets
+// - button resets
+
+// variables
+@import "variables"
+
+// Normalize
+@import "normalize"
+
+
+
+// general resets to html to make it easy to handel
+// border-box for box-sizing allow you to make the width clear
+// we can make the width as we like without consider to padding and border size
+html, *
+   box-sizing: border-box
+   &::selection
+      color: $select-color
+      background: $select-bg
+
+// body
+// here we will reset the body font size, background-color, color, reset the margin and font family
+
+body
+   font-family: $body-font-family
+   font-size: $body-font-size
+   margin: 0
+   color: $body-color
+   background:
+      color: $body-bg
+
+
+
+// main margin resets
+// it make the HTML tags have the same margin.
+// it simply remove the top margin of all elements and keep a constant margin at the bottom
+// - headding margin resets
+// - paragraph margin resets
+// - a tag margin resets
+// - button margin resets
+// - video margin and padding restes
+// - iframe margin, padding and border restes
+
+// heading margin resets
+%header-margin-reset
+   margin-top: 0
+   margin-bottom: 0
+@for $i from 1 to 7
+   h#{$i}
+      @extend %header-margin-reset
+
+// main margin resets for all other HTML elements
+%main-margin-reset
+   margin-top: 0
+   margin-bottom: 0
+// paragraph margin resets
+p
+   @extend %main-margin-reset
+// a tag margin resets
+a
+   @extend %main-margin-reset
+// button margin resets
+button
+   @extend %main-margin-reset
+
+// video margin and padding restes
+video
+   margin: 0
+   padding: 0
+
+iframe
+   margin: 0
+   padding: 0
+   outline: none
+   border: none
+// button resets
+%button-reset
+   color: $body-color
+   // font-family: $body-font-family
+   // font-size: $body-font-size
+   background-color: inherit
+   text-decoration: none
+   display: inline-block
+   border: none
+   cursor: pointer
+   padding: 0
+   margin: 0
+
+ul
+   list-style: none
+   margin: 0
+   padding: 0
+
+a.link
+   @extend %button-reset
