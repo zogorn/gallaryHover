@@ -16,7 +16,7 @@ You can choose from one of the bellow options:
 + Clone the repo: `git clone https://github.com/zogorn/galleryHover.git`
 + Add the script from CDN :
 
-`<script src="https://cdn.rawgit.com/zogorn/galleryHover/ccf687c7/assets/js/main.js"></script>`
+`<script src="https://cdn.rawgit.com/zogorn/galleryHover/3ed4ecc5/assets/js/main.js"></script>`
 
 
 ***
