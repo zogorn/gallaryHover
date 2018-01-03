@@ -4,14 +4,6 @@
       |-> Define variables
 */
 
-// when document ready start our function
-document.addEventListener("DOMContentLoaded", function(){
-
-	imageGallery('.container .gallary-item');
-   
-
-}); // DOMContentLoaded
-
 var imageGallery = function(gallerySelector){
 	// select images gallary
 	// var images = document.querySelectorAll('.container .gallary-item');
